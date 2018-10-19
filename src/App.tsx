@@ -1,22 +1,26 @@
-import { Button } from 'antd';
-import 'antd/lib/button/style/css';
+// import { Button } from 'antd';
+// import 'antd/lib/button/style/css';
 import * as React from 'react';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import './App.less';
-import logo from './logo.svg';
+import AboutMe from './views/about-me/about-me';
+import TheCapability from './views/capabilities/capabilities';
+// import logo from './logo.svg';
+import TheHome from './views/home/home';
+import TheProjects from './views/project/projects';
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Button>进入主页</Button>
-      </div>
+      <Router>
+        <Switch>
+          <Redirect exact from='/' to='/home'/>
+          <Route path='/home' component={TheHome} />
+          <Route path='/about' component={AboutMe} />
+          <Route path='/projects' component={TheProjects} />
+          <Route path='/capability' component={TheCapability} />
+        </Switch>
+      </Router>
     );
   }
 }

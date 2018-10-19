@@ -57,6 +57,7 @@
     "babel-plugin-import": "^1.10.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+    "react-router-dom": "^4.3.1",
     "typescript": "^3.1.3"
   },
   "jest": {
@@ -109,7 +110,14 @@
       "react-app"
     ],
     "plugins": [
-      ["import", { "libraryName": "antd", "libraryDirectory": "lib", "style": true }]
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "lib",
+          "style": true
+        }
+      ]
     ]
   }
 }
