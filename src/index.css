@@ -1,5 +1,25 @@
+/* 全局normalize样式 */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
+body, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* 引入全局动画样式 */
+@import './animation.less';
