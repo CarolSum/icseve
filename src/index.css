@@ -21,5 +21,9 @@ a {
   text-decoration: none;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
 /* 引入全局动画样式 */
 @import './animation.less';
