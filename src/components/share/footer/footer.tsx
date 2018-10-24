@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import './footer.less';
+
 class Footer extends React.Component {
   constructor(props: any) {
     super(props);
@@ -51,11 +53,11 @@ class Footer extends React.Component {
             <div className='content'>
               <h2>Let's keep in touch</h2>
               <a href='https://www.github.com/carolsum'>
-                <svg width='44px' height='44px'></svg>
+                <FontAwesomeIcon icon={['fab', 'github']}/>
               </a>
               <br/>
               <a href='https://twitter.com/905965287Sum'>
-                <svg width='44px' height='44px'></svg>
+                <FontAwesomeIcon icon={['fab', 'twitter']}/>
               </a>
             </div>
           </div>
