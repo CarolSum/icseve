@@ -33,7 +33,7 @@
     }
 
     a, h2, h3 {
-      font-family: brandon-grotesque,BrandonText,sans-serif;
+      font-family: 'Reem Kufi',BrandonText,sans-serif;
     }
 
     a, h3 {
@@ -46,8 +46,44 @@
       display: inline-block;
     }
 
+    a svg, h3 svg {
+      fill: #333;
+    }
+
+    .social {
+      a {
+        margin-bottom: 50px;
+        padding-bottom: 0;
+
+        svg {
+          transition: all 220ms linear;
+        }
+      }
+    }
+
     .social, nav {
       background-color: #f9f9f9;
+    }
+
+    .content {
+      svg {
+        fill: #333;
+      }
+    }
+
+    nav {
+      .icseve-logo svg {
+        margin-top: 50px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0 0 34px;
+
+        li {
+          display: block;
+        }
+      }
     }
   }
 
@@ -97,6 +133,15 @@
 
       nav {
         order: 2;
+
+        .icseve-logo {
+          position: absolute;
+          left: 50%;
+
+          svg {
+            transform: translateX(-50%);
+          }
+        }
       }
 
       >nav, >div {
