@@ -1,16 +1,14 @@
 /* 全局normalize样式 */
-
-
 @font-face {
   font-family: 'Reem Kufi';
   font-style: normal;
   font-weight: 400;
-  src: local('Reem Kufi'), local('ReemKufi'),
-       url('./assets/fonts/Reem_Kufi/ReemKufi-Regular.ttf') format('ttf');
+  src: local('Reem Kufi'),
+       url('./assets/fonts/Reem_Kufi/ReemKufi-Regular.ttf') format('truetype');
 }
 
 html {
-  font-family: 'Reem Kufi', sans-serif;
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -18,7 +16,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Reem Kufi', sans-serif;
+  font-family: sans-serif;
 }
 
 body, h1, h2, h3, h4, h5, h6, ul {
