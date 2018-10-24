@@ -20,7 +20,7 @@ class Footer extends React.Component {
         <div className='height'>
           <nav>
             <a href='/' className='icseve-logo'>
-              <svg width='44px' height='62px'/>
+              <FontAwesomeIcon icon={['fab', 'cloudsmith']}/>
             </a>
             <div className='content'>
               <h2>Navigation</h2>

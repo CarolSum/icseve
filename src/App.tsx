@@ -4,7 +4,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import brands fa icons
 // usage: icon={['fab', 'github']}
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faCloudsmith, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 // import regular fa icons
 // usage: icon={['far', 'check-circle']}
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
@@ -23,6 +23,7 @@ import TheProjects from './views/project/projects';
 library.add(
   faGhost,
   faTwitter,
+  faCloudsmith,
   faGithub,
   faCheckCircle
 );
