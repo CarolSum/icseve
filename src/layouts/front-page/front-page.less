@@ -64,6 +64,10 @@
       .wrapper {
         height: 100%;
       }
+
+      img {
+        width: 100%;
+      }
     }
 
     .part.project.intro {
@@ -111,6 +115,15 @@
       .part.project.intro {
         height: 100vh;
       }
+
+      .part.project {
+        img {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
     }
   }
 }
@@ -137,6 +150,23 @@
           position: relative;
           left: 50%;
           transform: translateX(-50%);
+
+          img {
+            position: relative;
+            left: 66.666%;
+            top: 50%;
+            transform: translate(-50% -50%);
+            height: 100%;
+            max-height: 100%;
+            min-width: 0;
+            min-height: 0;
+          }
+        }
+
+        img {
+          width: auto;
+          min-width: 100%;
+          min-height: 100%;
         }
       }
     }

@@ -41,5 +41,9 @@ audio, canvas, progress, video {
   vertical-align: baseline;
 }
 
+img, legend {
+  border: 0;
+}
+
 /* 引入全局动画样式 */
 @import './animation.less';

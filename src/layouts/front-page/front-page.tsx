@@ -1,4 +1,5 @@
 import * as React from 'react';
+import passItOnImg from '../../assets/images/pass-it-on_desktop.jpg';
 import './front-page.less';
 
 class FrontPage extends React.Component {
@@ -31,7 +32,7 @@ class FrontPage extends React.Component {
             <div className='part project sigdetvidere'>
               <div className='wrapper'>
                 <picture>
-                  <img src='../../assets/images/pass-it-on_desktop.jpg'
+                  <img src={passItOnImg}
                     sizes='(max-width: 299px) 66vw, 660px'
                     alt='A picture of the Experimentarium Pass It On project'/>
                 </picture>
