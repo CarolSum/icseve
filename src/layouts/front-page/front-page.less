@@ -1,0 +1,160 @@
+.site {
+  min-height: 100vh;
+
+  #main-patterns, .pattern {
+    position: absolute;
+  }
+
+  #main-patterns, .pattern {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .page {
+    overflow: hidden;
+  }
+
+  .page.frontpage {
+    margin-bottom: -12.5px;
+
+    .layer {
+      position: relative;
+    }
+
+    .description-box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+
+      .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .box {
+          position: absolute;
+          overflow: hidden;
+          height: 100%;
+          width: 100%;
+          color: #fff;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+
+        .box:not(.intro) {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .part {
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .part.project {
+      background-size: cover;
+      cursor: pointer;
+
+      .wrapper {
+        height: 100%;
+      }
+    }
+
+    .part.project.intro {
+      cursor: auto;
+    }
+
+    .part.project.sigdetvidere {
+      background-color: #3c6ce8;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .site {
+    .page.frontpage {
+      margin-bottom: -25px;
+
+      .description-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        transition: transform .4s cubic-bezier(.785,.135,.15,.86),left .4s cubic-bezier(.785,.135,.15,.86),height .4s cubic-bezier(.785,.135,.15,.86),bottom .4s cubic-bezier(.785,.135,.15,.86);
+        z-index: 10;
+        bottom: auto;
+        padding: 25px 12.5px;
+        max-width: 350px;
+
+        .wrapper {
+          .box {
+            padding: 0;
+          }
+        }
+      }
+
+      .description-box.left {
+        height: 75%;
+      }
+
+      .part {
+        height: 75vh;
+      }
+
+      .part.project.intro {
+        height: 100vh;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .site {
+    padding-bottom: 100vh;
+
+    .page.frontpage {
+      .description-box {
+        width: 45vw;
+        width: calc(50vw - 20px);
+        max-width: 468px;
+      }
+
+      .description-box.left {
+        left: 25%;
+        left: calc(25% + 6px);
+      }
+
+      .part.project {
+        .wrapper {
+          max-width: 1440px;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .site {
+    .page.frontpage {
+      .description-box {
+        width: 30vw;
+        width: calc((100vw - 40px)/ 3);
+      }
+
+      .description-box.left {
+        left: 16.666%;
+        left: calc(100% / 6 + 6px);
+      }
+    }
+  }
+}

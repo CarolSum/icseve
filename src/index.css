@@ -36,5 +36,10 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 /* 引入全局动画样式 */
 @import './animation.less';
