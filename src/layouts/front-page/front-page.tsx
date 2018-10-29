@@ -1,4 +1,6 @@
 import * as React from 'react';
+import cocioImg from '../../assets/images/cocio_desktop.jpg';
+import generousStoreImg from '../../assets/images/generous-store_desktop.jpg';
 import passItOnImg from '../../assets/images/pass-it-on_desktop.jpg';
 import './front-page.less';
 
@@ -37,6 +39,22 @@ class FrontPage extends React.Component {
                     alt='A picture of the Experimentarium Pass It On project'/>
                 </picture>
               </div>
+            </div>
+            <div className='part project cocio'>
+              <div className='wrapper'>
+                <picture>
+                  <img src={cocioImg}
+                    sizes='(max-width: 299px) 66vw, 660px'
+                    alt='A picture of the Cocio project'/>
+                </picture>
+              </div>
+            </div>
+            <div className='part project generosity'>
+              <picture>
+                <img src={generousStoreImg}
+                  sizes='100vw'
+                  alt='A picture of the Anthon Berg Generous Store project'/>
+              </picture>
             </div>
           </div>
           <div className='description-box' style={this.descriptionBoxStyle}>
