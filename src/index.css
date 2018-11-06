@@ -45,5 +45,8 @@ img, legend {
   border: 0;
 }
 
+
+/* 引入base样式 */
+@import './base.less';
 /* 引入全局动画样式 */
 @import './animation.less';

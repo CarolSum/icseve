@@ -57,6 +57,24 @@ class FrontPage extends React.Component {
               </picture>
             </div>
           </div>
+          <ul className='part about'>
+            <li className='capabilities'>
+              <div className='wrapper'>
+                <div className='pattern'></div>
+              </div>
+              <div className='description'>
+                <div className='content'>
+                  <div className='center'>
+                    <h2>Our capabilities</h2>
+                    <h3>How can we help you?</h3>
+                    <a href='/capability'>Read More</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li className='applications'></li>
+            <li className='about-me'></li>
+          </ul>
           <div className='description-box' style={this.descriptionBoxStyle}>
             <div className='wrapper'>
               <div className='box intro'></div>

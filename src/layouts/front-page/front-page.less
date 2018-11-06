@@ -17,6 +17,10 @@
     overflow: hidden;
   }
 
+  .pattern {
+    position: absolute;
+  }
+
   .page.frontpage {
     margin-bottom: -12.5px;
 
@@ -55,6 +59,17 @@
       height: 100vh;
       overflow: hidden;
       position: relative;
+
+      .description {
+        text-align: center;
+
+        .center {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 0 8vw;
+        }
+      }
     }
 
     .part.project {
@@ -67,6 +82,63 @@
 
       img {
         width: 100%;
+      }
+    }
+
+    .part.about {
+      list-style: none;
+      padding: 25px 0 0;
+      height: auto;
+
+      li {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .wrapper {
+          overflow: hidden;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          box-sizing: border-box;
+
+          .pattern{
+            position: relative;
+            cursor: pointer;
+            height: 100%;
+            background-size: 600px 400px;
+          }
+        }
+
+        .description {
+          cursor: pointer;
+          position: relative;
+          left: 50%;
+          transform: translate(-50%, 0);
+          box-sizing: border-box;
+          padding: 125px 10px;
+
+          .content {
+            height: 100%;
+            background-color: #f9f9f9;
+            transition: all 150ms;
+
+            .center {
+              padding: 50px 8vw;
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+
+      li.capabilities {
+        .pattern {
+          background-image: url(../../assets/images/about-capabilities.jpg);
+        }
       }
     }
 
@@ -121,6 +193,12 @@
 
       .part {
         height: 75vh;
+
+        .description {
+          .center {
+            padding: 0 3vw;
+          }
+        }
       }
 
       .part.project.intro {
@@ -133,6 +211,29 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%,-50%);
+        }
+      }
+
+      .part.about {
+        li {
+          margin-bottom: 25px;
+
+          .wrapper {
+            padding: 0 25px;
+          }
+
+          .description {
+            padding: 25px;
+            height: 48.8vw;
+            width: 48.8vw;
+            min-width: 300px;
+            min-height: 300px;
+
+            .content .center{
+              padding: 0 3vw;
+              transform: translateY(-50%);
+            }
+          }
         }
       }
     }
@@ -180,6 +281,12 @@
           min-height: 100%;
         }
       }
+
+      .part.about {
+        li .wrapper .pattern{
+          background-size: 1200px 800px;
+        }
+      }
     }
   }
 }
@@ -195,6 +302,16 @@
       .description-box.left {
         left: 16.666%;
         left: calc(100% / 6 + 6px);
+      }
+
+      .part.about {
+        li {
+          .description {
+            height: 34.4vw;
+            width: 34.4vw;
+            max-height: 350px;
+          }
+        }
       }
     }
   }
