@@ -140,6 +140,23 @@
           background-image: url(../../assets/images/about-capabilities.jpg);
         }
       }
+
+      li.about-me {
+        .pattern {
+          background-image: url(../../assets/images/about-positions.jpg);
+          background-size: 67px 74px !important;
+        }
+      }
+
+      li.capabilities:hover .content h3{
+        color: #2bd618;
+        transition: color 150ms linear;
+      }
+
+      li.about-me:hover .content h3{
+        color: #f1dd00;
+        transition: color 150ms linear;
+      }
     }
 
     .part.project.intro {
@@ -285,6 +302,10 @@
       .part.about {
         li .wrapper .pattern{
           background-size: 1200px 800px;
+        }
+
+        li.about-me .pattern {
+          background-size: 133px 147px!important
         }
       }
     }
