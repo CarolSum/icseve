@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import cocioImg from '../../assets/images/cocio_desktop.jpg';
 import generousStoreImg from '../../assets/images/generous-store_desktop.jpg';
@@ -89,7 +90,19 @@ class FrontPage extends React.Component {
           </ul>
           <div className='description-box' style={this.descriptionBoxStyle}>
             <div className='wrapper'>
-              <div className='box intro'></div>
+              <div className='box intro'>
+                <div className='content middle'>
+                  <div id='logo'>
+                    <FontAwesomeIcon icon={['fab', 'cloudsmith']} className='icseve-logo'/>
+                  </div>
+                  <div className='center'>
+                    <h1>Welcome to Icseve</h1>
+                    <h2>This is a digital partner</h2>
+                    <p>We have been collaborating with brands and agencies
+                       to build meaningful digital interactions since 2008.</p>
+                  </div>
+                </div>
+              </div>
               <div className='box pass-it-on'></div>
               <div className='box cocio'></div>
               <div className='box generous-store'></div>
